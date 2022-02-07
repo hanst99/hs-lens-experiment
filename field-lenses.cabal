@@ -37,5 +37,11 @@ executable field-lenses
                       , sdl2 ^>= 2.5
                       , template-haskell ^>= 2.18
                       , lens ^>= 5.1
+                      , text
     hs-source-dirs:   app
+    ghc-options:
+      -O2
+      -threaded
+      -with-rtsopts=-NN
+      -with-rtsopts=-qm
     default-language: Haskell2010
